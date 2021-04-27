@@ -1,11 +1,12 @@
 import './App.css';
 import Child from './Child';
+import {TransactionProvider} from './GlobalContext'
 
 function App() {
   return (
-    <div>
+    <TransactionProvider>
       <Child />
-    </div>
+    </TransactionProvider>
   );
 }
 
